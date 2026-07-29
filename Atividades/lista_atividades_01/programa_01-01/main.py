@@ -23,7 +23,7 @@ try:
 
         match opcao:
             case 1:
-                imc = peso / (altura * altura)
+                imc = peso/(altura**2)
 
                 limites = [18.5, 25.0, 30.0, 35.0, 40.0]
 
