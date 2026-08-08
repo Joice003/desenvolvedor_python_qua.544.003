@@ -13,7 +13,7 @@ usuarios = []
 os.system("cls" if os.name == "nt" else "clear")
 
 while True:
-    # menu
+    # 1º menu
     print(f"{'-'*20} CRUDicionário {'-'*20}")
     print("1 - Cadastar novo usuário")
     print("2 - Listar todos os usuários")
@@ -44,10 +44,30 @@ while True:
                 print(f"{'-'*40}")
             continue
         case "3":
-            # TODO: fazer alterar usuário
-            pass
+            nome = input("Informe o nome a ser pesquisado: ").strip().title()
+            for usuario in usuarios:
+                if nome in usuario['nome']:
+                    # 2º menu
+                    print("nome")
+                    print("cpf")
+                    print("email")
+                    print("cancelar")
+                    alterar = input("Qual chave deseja alterar? ").strip().lower()
+                    if alterar in usuario:
+                        usuario[alterar] = input("Informe o novo valor: ").strip()
+                        print("Alterado com sucesso!")
+                else:
+                    print("usuário não encontrado")
         case "4":
-            # TODO: excluir usuário
+            nome = input("Informe o nome a ser deletado: ").strip().title()
+            for usuario in usuarios:
+                if nome in usuario['nome']:
+                    usuarios.remove(usuario)
+                    print("Usuário deletado com sucesso!")
+                else:
+                    # REVIEW: mensagem bugada
+                    print("Usuário não encontrado.")
+            continue
             pass
         case "5":
             break
