@@ -1,0 +1,42 @@
+[
+    {
+        "nome": "Ana",
+        "nota1": 3.0,
+        "nota2": 5.0,
+        "nota3": 6.0,
+        "media": 4.67,
+        "situacao": "Reprovado"
+    },
+    {
+        "nome": "Leo",
+        "nota1": 10.0,
+        "nota2": 8.0,
+        "nota3": 7.0,
+        "media": 8.33,
+        "situacao": "Aprovado"
+    },
+    {
+        "nome": "Teresa",
+        "nota1": 10.0,
+        "nota2": 9.0,
+        "nota3": 10.0,
+        "media": 9.67,
+        "situacao": "Aprovado"
+    },
+    {
+        "nome": "João",
+        "nota1": 5.3,
+        "nota2": 8.2,
+        "nota3": 6.5,
+        "media": 6.67,
+        "situacao": "Reprovado"
+    },
+    {
+        "nome": "Maria",
+        "nota1": 10.0,
+        "nota2": 9.9,
+        "nota3": 8.0,
+        "media": 9.3,
+        "situacao": "Aprovado"
+    }
+]
